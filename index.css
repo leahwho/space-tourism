@@ -47,7 +47,7 @@ h5,
 p,
 figure,
 picture {
-    margin: 0;
+  margin: 0;
 }
 
 /* set up the body */
@@ -63,8 +63,8 @@ body {
 /* make images easier to work with */
 img,
 picture {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 /* make form elements easier to work with */
@@ -72,7 +72,7 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 /* remove animations for people who've turned them off */
@@ -182,7 +182,7 @@ p {
 .fs-800,
 .fs-700,
 .fs-600 {
-    line-height: 1.1;
+  line-height: 1.1;
 }
 
 .numbered-title {
