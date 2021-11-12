@@ -88,36 +88,39 @@
         <h2 class="numbered-title"><span>03</span> Interactive elements</h2>
         
         <!-- navigation -->
-        <div>
+        <div style="margin-top: 3rem;">
           <nav>
-            <ul class="primary-navigation underline-indicators flex">
-              <li class="active"><a class="uppercase text-white letter-spacing-2" href="#"><span>01</span>Active</a>
-              <li><a class="uppercase text-white letter-spacing-2" href="#"><span>02</span>Hovered</a>
-              <li><a class="uppercase text-white letter-spacing-2" href="#"><span>03</span>Idle</a>
+            <ul class="primary-navigation flex">
+              <li class="active"><a class="underline-indicators uppercase text-white letter-spacing-2" href="#"><span>01</span>Active</a>
+              <li><a class="underline-indicators uppercase text-white letter-spacing-2" href="#"><span>02</span>Hovered</a>
+              <li><a class="underline-indicators uppercase text-white letter-spacing-2" href="#"><span>03</span>Idle</a>
             </ul>
           </nav>
         </div>
         
-        <div class="flex">
-          <div style="margin-top: 5rem">
+        <div class="flex" style="gap: var(--gap, 5rem)">
+          <div style="margin-top: 5rem; text-align: center;">
             <!-- explore button -->
             <a href='#' class='large-button bg-white text-dark ff-serif fs-600 uppercase'>Explore</a>
+            <p style='margin-top: 7vh;'>Landing Page Main Button</p>
           </div>
         
           <div style="margin-bottom: 50vh">
             <!-- Tabs -->
-            <div class="tab-list underline-indicators flex">
-              <button aria-selected='true' class="uppercase text-light letter-spacing-2 bg-dark ff-sans-cond">
-                Moon
-              </button>
-              <button aria-selected='false' class="uppercase text-light letter-spacing-2 bg-dark ff-sans-cond">
-                Mars
-              </button>
-              <button aria-selected='false' class="uppercase text-light letter-spacing-2 bg-dark ff-sans-cond">
-                Europa
-              </button>
+            <div class='flex-columns' style="margin-top: 10vh; text-align: center;">
+              <div class="tab-list flex">
+                <button aria-selected='true' class="underline-indicators uppercase text-light letter-spacing-2 bg-dark ff-sans-cond">
+                  Moon
+                </button>
+                <button aria-selected='false' class="underline-indicators uppercase text-light letter-spacing-2 bg-dark ff-sans-cond">
+                  Mars
+                </button>
+                <button aria-selected='false' class="underline-indicators uppercase text-light letter-spacing-2 bg-dark ff-sans-cond">
+                  Europa
+                </button>
+              </div>
+              <p>Tabs (Active, Hover, & Idle)</p>
             </div>
-              
             <!-- Dots -->
             
             
