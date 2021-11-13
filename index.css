@@ -284,3 +284,41 @@ p {
   color: hsl( var(--clr-white) / 1);
   border-color: hsl( var(--clr-white) / 1);
 }
+
+.dot-button {
+  cursor: pointer;
+  border: none;
+  background-color: hsl( var(--clr-white) / .15);
+  text-decoration: none;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.dot-button:hover,
+.dot-button:focus {
+  background-color: hsl( var(--clr-white) / .5);
+}
+
+.dot-button[aria-selected="true"] {
+  background-color: hsl( var(--clr-white) / 1);
+}
+
+.number-button {
+  background-color: hsl(var(--clr-dark));
+  border: 1.5px solid hsl(var(--clr-white) / 0.25);
+  border-radius: 50%;
+  color: hsl(var(--clr-white));
+  cursor: pointer;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.number-indicators > [aria-selected="true"] {
+  color: hsl( var(--clr-dark) / 1);
+  background-color: hsl( var(--clr-white) / 1);
+}
+
+.number-button:hover,
+.number-button:focus {
+  border-color: hsl( var(--clr-white) )
+}
