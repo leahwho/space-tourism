@@ -248,6 +248,8 @@ p {
   list-style: none;
   padding: 0;
   margin: 0;
+  padding: var(--underline-gap, 1rem) 0;
+  background-color: hsl(var(--clr-white) / 0.05);
 }
 
 .primary-navigation a {
@@ -304,6 +306,7 @@ p {
 }
 
 .number-button {
+  display: grid;
   background-color: hsl(var(--clr-dark));
   border: 1.5px solid hsl(var(--clr-white) / 0.25);
   border-radius: 50%;
@@ -311,6 +314,10 @@ p {
   cursor: pointer;
   width: 3.5rem;
   height: 3.5rem;
+}
+
+.number-button > span {
+  place-self: center;
 }
 
 .number-indicators > [aria-selected="true"] {
