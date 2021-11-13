@@ -88,40 +88,62 @@
         <h2 class="numbered-title"><span>03</span> Interactive elements</h2>
         
         <!-- navigation -->
-        <div>
-          <nav>
-            <ul class="primary-navigation underline-indicators flex">
-              <li class="active"><a class="uppercase text-white letter-spacing-2" href="#"><span>01</span>Active</a>
-              <li><a class="uppercase text-white letter-spacing-2" href="#"><span>02</span>Hovered</a>
-              <li><a class="uppercase text-white letter-spacing-2" href="#"><span>03</span>Idle</a>
-            </ul>
-          </nav>
+        <div class="flex-columns" style="text-align: center;">
+          <div style="margin: 3rem 0;">
+            <nav>
+              <ul class="primary-navigation flex">
+                <li class="active"><a class="underline-indicators uppercase text-white letter-spacing-2" href="#"><span>01</span>Active</a>
+                <li><a class="underline-indicators uppercase text-white letter-spacing-2" href="#"><span>02</span>Hovered</a>
+                <li><a class="underline-indicators uppercase text-white letter-spacing-2" href="#"><span>03</span>Idle</a>
+              </ul>
+            </nav>
+          </div>
+          <p class='fs-300 text-light'>Different states of Navigation Bar</p>
         </div>
         
-        <div class="flex">
-          <div style="margin-top: 5rem">
+        <div class="flex" style="gap: var(--gap, 5rem)">
+          <div style="margin-top: 5rem; text-align: center;">
             <!-- explore button -->
             <a href='#' class='large-button bg-white text-dark ff-serif fs-600 uppercase'>Explore</a>
+            <p class='fs-300 text-light' style='margin-top: 7vh;'>Landing Page Main Button</p>
           </div>
         
-          <div style="margin-bottom: 50vh">
+          <div class='flow' style="margin-bottom: 50vh; --flow-space: 4rem;" >
             <!-- Tabs -->
-            <div class="tab-list underline-indicators flex">
-              <button aria-selected='true' class="uppercase text-light letter-spacing-2 bg-dark ff-sans-cond">
-                Moon
-              </button>
-              <button aria-selected='false' class="uppercase text-light letter-spacing-2 bg-dark ff-sans-cond">
-                Mars
-              </button>
-              <button aria-selected='false' class="uppercase text-light letter-spacing-2 bg-dark ff-sans-cond">
-                Europa
-              </button>
+            <div class='flex-columns' style="margin-top: 10vh; text-align: center;">
+              <div class="tab-list flex">
+                <button aria-selected='true' class="underline-indicators uppercase text-light letter-spacing-2 bg-dark ff-sans-cond">
+                  Moon
+                </button>
+                <button aria-selected='false' class="underline-indicators uppercase text-light letter-spacing-2 bg-dark ff-sans-cond">
+                  Mars
+                </button>
+                <button aria-selected='false' class="underline-indicators uppercase text-light letter-spacing-2 bg-dark ff-sans-cond">
+                  Europa
+                </button>
+              </div>
+              <p class='fs-300 text-light'>Tabs (Active, Hover, & Idle)</p>
             </div>
-              
+
             <!-- Dots -->
-            
+            <div class='flex-columns'>
+              <div class="dot-indicators flex">
+                <button aria-selected="true" class='dot-button'><span class="screen-reader-only">Slide title</span></button>
+                <button aria-selected="false" class='dot-button'><span class="screen-reader-only">Slide title</span></button>
+                <button aria-selected="false" class='dot-button'><span class="screen-reader-only">Slide title</span></button>
+              </div>
+              <p class='fs-300 text-light'>Slider 1 States (Active, Hover, & Idle)</p>
+            </div> 
             
             <!-- Numbers -->
+            <div class="flex-columns" style="align-items: center;">
+              <div class="number-indicators flex-columns">
+                <button aria-selected="true" class='number-button'><span class='fs-500 ff-serif'>1</span></button>
+                <button aria-selected="false" class='number-button'><span class='fs-500 ff-serif'>2</span></button>
+                <button aria-selected="false" class='number-button'><span class='fs-500 ff-serif'>3</span></button>
+              </div>
+              <p class='fs-300 text-light'>Slider 2 States (Active, Hover, & Idle)</p>
+            </div> 
           </div>
         </div>
         
